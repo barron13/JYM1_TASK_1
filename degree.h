@@ -1,0 +1,1 @@
+enum class DegreeProgram {SECURITY = 3, NETWORK = 2, SOFTWARE = 1, UNDETERMINED = 0};

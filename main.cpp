@@ -7,6 +7,13 @@ using namespace std;
 
 int main() {
 
+//Print out student information to screen
+
+    cout << "Course Title: Scripting and Programming - Applications" << endl;
+    cout << "Language used: C++" << endl;
+    cout << "WGU Student ID: 010585789" << endl;
+    cout << "Name: Nicolas Barroga" << endl; << endl;
+
 // Input studentData from task scenario
 
     const string studentData[] =
@@ -15,5 +22,5 @@ int main() {
      "A3, Jack,Napoli, The_lawyer99yahoo.com, 19, 20, 40, 33, SOFTWARE",
      "A4, Erin, Black, Erin.black@comcast.net, 22, 50,58, 40, SECURITY",
      "A5, Nicolas,Barroga,nbarrog@wgu.edu, 26, 10, 15, 30, SOFTWARE"};
-     
+
 }

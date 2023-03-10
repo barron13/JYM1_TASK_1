@@ -23,7 +23,7 @@ class Student {
         string getLName();
         string getEmail();
         int getAge();
-        int getDays();
+        int* getDays();
         DegreeProgram getDegree();
 
     //Mutator functions
@@ -38,7 +38,7 @@ class Student {
     //Constructor functions
         Student(); //Sets parameters to default values
         Student(string studentID, string firstName, string lastName, string emailAddress, int age, int daysComplete[], DegreeProgram degreeProgram);
-
+        
     //Print function
         void print();
 };

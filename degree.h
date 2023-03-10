@@ -1,5 +1,9 @@
+#include <string>
+
+using namespace std;
+
 //Define DegreeProgram class
-enum class DegreeProgram {SECURITY = 3, NETWORK = 2, SOFTWARE = 1, UNDETERMINED = 0};
+enum DegreeProgram {SECURITY, NETWORK, SOFTWARE, UNDETERMINED};
 
 //Define array used to retrieve string value of DegreeProgram class
 static const std::string degreeStrings[] = { "SECURITY", "NETWORK", "SOFTWARE", "UNDETERMINED"};

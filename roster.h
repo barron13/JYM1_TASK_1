@@ -34,4 +34,5 @@ class roster {
         void printAll();
         void printAverageDaysInCourse(string studentID);
         void printInvalidEmails();
+        void printByDegreeProgram(DegreeProgram degreeProgram);
 };

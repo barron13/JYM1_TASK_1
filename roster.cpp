@@ -89,7 +89,8 @@ bool roster::remove(string studentID) {
 };
 
 void roster::printAll(){
-    cout << "ID" << '\t' << "First Name" << '\t' <<"Last Name" << '\t' << "Email Address" << '\t' << "Age" << '\t'<< "Days to Complete" << '\t'<< "Degree" << std::endl;
+    cout << "ID" << '\t' << "First Name" << '\t' <<"Last Name" << '\t' << "Email Address" << '\t' << "Age" << '\t'<< "Days to Complete" << '\t'<< "Degree" << endl;
+
     for (int i = 0; classRosterArray.at(i); i++) roster::classRosterArray[i]->print();
 };
 
@@ -127,4 +128,13 @@ void roster::printInvalidEmails() {
 		cout << "No invalid email addresses found" << endl;
 	}
 	cout << endl;
-}
+};
+
+void roster::printByDegreeProgram(DegreeProgram degreeProgram) {
+    cout << "ID" << '\t' << "First Name" << '\t' <<"Last Name" << '\t' << "Email Address" << '\t' << "Age" << '\t'<< "Days to Complete" << '\t'<< "Degree" << endl;
+
+        for (int i = 0; classRosterArray.at(i); i++) {
+        if (classRosterArray.at(i)->getDegree() == degreeProgram) classRosterArray.at(i)->print();
+    }
+    cout << endl;
+};

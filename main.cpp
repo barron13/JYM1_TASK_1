@@ -12,7 +12,7 @@ int main() {
     cout << "Course Title: Scripting and Programming - Applications" << endl;
     cout << "Language used: C++" << endl;
     cout << "WGU Student ID: 010585789" << endl;
-    cout << "Name: Nicolas Barroga" << endl; << endl;
+    cout << "Name: Nicolas Barroga" << endl << endl;
 
 // Input studentData from task scenario
 
@@ -23,4 +23,5 @@ int main() {
      "A4, Erin, Black, Erin.black@comcast.net, 22, 50,58, 40, SECURITY",
      "A5, Nicolas,Barroga,nbarrog@wgu.edu, 26, 10, 15, 30, SOFTWARE"};
 
-}
+};
+

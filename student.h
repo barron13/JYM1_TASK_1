@@ -1,10 +1,11 @@
 #include <string>
+#include <vector>
 
 using namespace std;
 
 #include "degree.h"
 
-class Student {
+class student {
     //Declare size of array for daysComplete
     public:
     const static int days = 3;
@@ -13,7 +14,7 @@ class Student {
     private:
         string studentID, firstName, lastName, emailAddress;
         int age;
-        int daysComplete[days] ;
+        vector<int> daysComplete;
         DegreeProgram degreeProgram;
 
     public:
@@ -23,7 +24,7 @@ class Student {
         string getLName();
         string getEmail();
         int getAge();
-        int* getDays();
+        vector<int> getDays();
         DegreeProgram getDegree();
 
     //Mutator functions
@@ -32,12 +33,12 @@ class Student {
         void setLName(string lastName);
         void setEmail(string emailAddress);
         void setAge(int Age);
-        void setDays(int daysComplete[]);
+        void setDays(vector<int> daysComplete);
         void setDegree(DegreeProgram degreeProgram);
 
     //Constructor functions
-        Student(); //Sets parameters to default values
-        Student(string studentID, string firstName, string lastName, string emailAddress, int age, int daysComplete[], DegreeProgram degreeProgram);
+        student(); //Sets parameters to default values
+        student(string studentID, string firstName, string lastName, string emailAddress, int age, vector<int> daysComplete, DegreeProgram degreeProgram);
         
     //Print function
         void print();
